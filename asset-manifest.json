@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react03-tariff/static/css/main.b8ad21b3.css",
+    "main.js": "/react03-tariff/static/js/main.f61f9120.js",
+    "static/js/787.8d5d3eb2.chunk.js": "/react03-tariff/static/js/787.8d5d3eb2.chunk.js",
+    "index.html": "/react03-tariff/index.html",
+    "main.b8ad21b3.css.map": "/react03-tariff/static/css/main.b8ad21b3.css.map",
+    "main.f61f9120.js.map": "/react03-tariff/static/js/main.f61f9120.js.map",
+    "787.8d5d3eb2.chunk.js.map": "/react03-tariff/static/js/787.8d5d3eb2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8ad21b3.css",
+    "static/js/main.f61f9120.js"
+  ]
+}
