@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './_App.scss';
+
+import { tariffs } from './components/tariffs';
+import { Tariff } from './components/tariff/Tariff';
+
+// "дизайн" конечно тот еще кринж получился)
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="body">
+            <h1 className="title">выберите тариф</h1>
+            <div className="catalogue" id="catalogue">
+                {tariffs.map((tariff, index) => <Tariff key={index} tariff={tariff} />)}
+            </div>
+        </div>
+    );
 }
 
 export default App;

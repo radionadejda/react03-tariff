@@ -1,0 +1,66 @@
+@import '../../vars';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1%;
+    margin: 0 0.1%;
+    border: 2px solid $accent1;
+    background-color: rgba($bg, 0.2);
+    border-radius: 1em;
+    z-index: 0;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: rgba($bg, 0.7);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px $accent1;
+        transition: 0.5s;
+    }
+}
+
+.extra {
+    border: 2px solid $accent2;
+    background-color: $accent2;
+    width: 50%;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: rgba($accent2, 0.7);
+        box-shadow: 0 10px 20px $accent2;
+    }
+}
+
+.card__title,
+.card__cost,
+.card__speed,
+.card__description {
+    background-color: rgba($bg, 0.3);
+    width: 100%;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__title {
+    color: $accent1;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 14%;
+}
+
+.card__cost {
+    height: 14%;
+}
+
+.card__speed {
+    height: 39%;
+}
+
+.card__description {
+    height: 29%;
+}
