@@ -1,8 +1,0 @@
-{
-    "prettier.tabWidth": 4,
-    "prettier.proseWrap": "never",
-    "editor.wordWrapColumn": 200,
-    "prettier.bracketSameLine": true,
-    "prettier.jsxBracketSameLine": true,
-    "prettier.printWidth": 200
-}

@@ -44,23 +44,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3%;
 }
 
 .card__title {
     color: $accent1;
     text-transform: uppercase;
     font-weight: bold;
-    height: 14%;
-}
-
-.card__cost {
-    height: 14%;
-}
-
-.card__speed {
-    height: 39%;
-}
-
-.card__description {
-    height: 29%;
 }

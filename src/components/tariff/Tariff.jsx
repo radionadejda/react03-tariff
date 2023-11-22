@@ -7,7 +7,7 @@ export function Tariff(props) {
     return (
         <div className={TariffClass}>
             <div className="card__title">
-                {title} {cost}
+                {title} <br></br> {cost}
             </div>
             <div className="card__cost">{cost} руб/мес</div>
             <div className="card__speed">до {speed} мбит/сек</div>
