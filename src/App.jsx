@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './_App.scss';
+import './App.scss';
 
 import tariffs from './tariffs.json';
 import { Tariff } from './components/Tariff/Tariff';
