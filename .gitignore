@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/components/Tariff/TariffCopy.jsx
+src/App copy.jsx

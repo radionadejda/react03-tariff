@@ -9,7 +9,7 @@ import { Tariff } from './components/Tariff/Tariff';
 function App() {
     return (
         <div className="body">
-            <h1 className="title">выберите тариф</h1>
+            <h1 className="title">вот такие тарифы у нас есть</h1>
             <div className="catalogue" id="catalogue">
                 {tariffs.map((tariff, index) => (
                     <Tariff key={index} tariff={tariff} />
