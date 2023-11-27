@@ -104,8 +104,16 @@ State: Могут иметь состояние (state) и жизненный ц
 
 function MyComponent(props) {
   const [value, setValue] = useState(props.initialValue || 'Default Value');
+}
 
 function MyComponent(props) {
   const [value, setValue] = useState(
     props.initialValue ? props.initialValue : 'Default Value'
   );
+}
+
+function MyComponent(props) {
+  static defaultProps = {
+    propKey: defaultPropValue
+  }
+}
