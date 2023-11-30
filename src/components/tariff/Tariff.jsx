@@ -3,12 +3,7 @@ import styles from './Tariff.module.scss';
 
 export function Tariff(props) {
     const { title, cost, speed, description } = props.tariff;
-    const [selected, setSelected] = useState(false);
-
-    const handleClick = () => {
-        setSelected(!selected);
-        // чтобы выключить выбор, надо кликать на каждый выбранный элемент снова, я совсем не понимаю, как сделать чтобы он сначала выключался на остальных тарифах, а потом включался на кликнутом(
-    };
+    const { selected, onClick } = props;
 
     let TariffClass = `${styles.card}`;
     if (cost === 550) {
@@ -19,7 +14,7 @@ export function Tariff(props) {
     }
 
     return (
-        <div className={TariffClass} onClick={handleClick}>
+        <div className={TariffClass} onClick={onClick}>
             <div className={styles.card__title}>
                 {title} <br></br> {cost}
             </div>
