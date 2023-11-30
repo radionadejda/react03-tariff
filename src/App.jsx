@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.scss';
 
 import tariffs from './tariffs.json';
@@ -14,6 +14,22 @@ function App() {
             setSelectedTariffIndex(index);
         }
     };
+
+    const handleClickOutsideTariff = (event) => {
+        const isClickedOnTitle = event.target.closest('.title');
+        const isClickedInsideCatalogue = event.target.closest('.catalogue');
+        if (isClickedOnTitle || !isClickedInsideCatalogue) {
+            setSelectedTariffIndex(null);
+        }
+    };
+    // This effect runs only on mount and cleans up on unmount
+    useEffect(() => {
+        document.addEventListener('click', handleClickOutsideTariff);
+
+        return () => {
+            document.removeEventListener('click', handleClickOutsideTariff);
+        };
+    }, []);
 
     return (
         <div className="body">
